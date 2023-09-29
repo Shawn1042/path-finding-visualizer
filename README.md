@@ -38,3 +38,7 @@ Add the ability to adjust weights and consider obstacles.
 
 Contributions 🤝
 Feel free to fork this project, make enhancements, and create pull requests. All contributions are welcome!
+
+TRY IT OUT 🤝
+
+https://path-finding-visualizer-theta.vercel.app/
