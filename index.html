@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pathfinding Visualizer</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class="main-container">
+        <!-- Information Box -->
+        <div class="info-box">
+            <h2>Algorithm Descriptions</h2>
+            <div class="algorithm-info">
+                <h3>BFS (Breadth-First Search)</h3>
+                <p>BFS explores nodes level-by-level, radiating out from the starting point. It guarantees the shortest path in an unweighted graph or grid.</p>
+            </div>
+            <div class="algorithm-info">
+                <h3>DFS (Depth-First Search)</h3>
+                <p>DFS dives deep into one direction before backtracking, exploring as far as possible along each branch. It doesn't guarantee the shortest path in a grid environment.</p>
+            </div>
+
+            <div class="algorithm-info">
+                <h3>Dijkstra's Algorithm</h3>
+                <p>Dijkstra's algorithm finds the shortest path between two points on a grid. It smartly picks the closest spot to start from and keeps going. In our project, we show just the quickest route at the end. That's why it looks super fast, especially when the path is straightforward.</p>
+                 </div>
+            
+        </div>
+
+        <!--  controls and grid -->
+        <div class="controls-grid-container">
+            <button onclick="startBFS()">Start BFS</button>
+            <button id="dfsButton">Start DFS</button>
+            <button onclick="startDijkstra()">Start Dijkstra</button>
+
+            <button id="clearButton">Clear</button>
+
+            <div id="grid"></div>
+        </div>
+
+        <div id="infoModal" class="modal">
+            <div class="modal-content">
+                <span class="close-btn">&times;</span>
+                <h2>Welcome to the Pathfinding Visualizer!</h2>
+                <p>Select a starting point and an end point by clicking on two grid cells. Then choose an algorithm to visualize its pathfinding process. Once you're ready, hit the 'Start' button corresponding to the algorithm of your choice!</p>
+                <p>Each algorithm has its strengths and characteristics. Check out the descriptions to learn more about them!</p>
+            </div>
+        </div>
+        
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>
